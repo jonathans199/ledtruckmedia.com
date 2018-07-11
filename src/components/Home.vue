@@ -93,7 +93,7 @@
                           placeholder="EMAIL">
             </b-form-input>
           </b-form-group>
-          <b-form-group id="exampleInputGroup2"
+          <b-form-group id="exampleInputGroup2">
             <b-form-input id="exampleInput2"
                           type="text"
                           v-model="form.name"
@@ -167,17 +167,6 @@ export default {
     "video-bg": VideoBg
   },
 
-  data () {
-    return {
-      form: {
-        email: '',
-        name: '',
-        message: null,
-        checked: []
-      },
-      show: true
-    }
-  },
   data () {
     return {
       form: {
