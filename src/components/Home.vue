@@ -24,7 +24,7 @@
     <b-container class="boxes-3 col-12">
       <b-row>
         <b-col class="3-boxes__left text-center">
-          <img class="boxes-3__truck-side" src="../assets/img/truck_side.png" alt="">
+          <img class="boxes-3__truck-side" src="../assets/img/side-truck-add.png" alt="">
           <h3>SIDE PANEL</h3>
           <strong> 120" Diagonal HD </strong>
           <p>30 sec spot / 15 sec spot</p>
@@ -32,7 +32,7 @@
           <b-button variant="outline-success" href="#"> Buy Ad now</b-button>
         </b-col>
         <b-col class="3-boxes__middle text-center">
-          <img class="boxes-3__truck-back" src="../assets/img/truck_back.png" alt="">
+          <img class="boxes-3__truck-back" src="../assets/img/back-truck-add.png" alt="">
           <h3>BACK PANEL</h3>
           <strong>720" Square HD </strong>
           <p>30 sec spot / 15 sec spot </p>
@@ -182,39 +182,6 @@ export default {
   
 }
 
-
-// export default {
-//   data () {
-//     return {
-//       form: {
-//         email: '',
-//         name: '',
-//         message: null,
-//         checked: []
-//       },
-//       show: true
-//     }
-//   },
-//   methods: {
-//     onSubmit (evt) {
-//       evt.preventDefault();
-//       alert(JSON.stringify(this.form));
-//     },
-//     onReset (evt) {
-//       evt.preventDefault();
-//       /* Reset our form values */
-//       this.form.email = '';
-//       this.form.name = '';
-//       this.form.message = null;
-//       this.form.checked = [];
-//       /* Trick to reset/clear native browser form validation state */
-//       this.show = false;
-//       this.$nextTick(() => { this.show = true });
-//     }
-//   }
-// }
-
-
 </script>
 
 
@@ -293,11 +260,13 @@ export default {
 }
 
 .boxes-3__truck-side {
-  
+  /* width: 50%;
+  height: auto; */
 }
 
 .boxes-3__truck-back {
-  
+  /* width: auto;
+  height: 50%; */
 }
 
 .boxes-3__truck-full {
