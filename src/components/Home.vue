@@ -161,8 +161,11 @@
 </template>
 
 <script>
-
 import VideoBg from 'vue-videobg'
+import axios from 'axios'
+import Toasted from 'vue-toasted'
+import Vue from 'vue';
+Vue.use(Toasted)
 
 export default {
   name: "home",
@@ -178,25 +181,28 @@ export default {
         message: null,
         checked: []
       },
-      show: true
+      show: true,
+      api: 'https://api.ledtruckmedia.com/'
     }
   },
-  data () {
-    return {
-      form: {
-        email: '',
-        name: '',
-        message: null,
-        checked: []
-      },
-      show: true
-    }
-  },
+
   methods: {
     onSubmit (evt) {
       evt.preventDefault();
-      alert(JSON.stringify(this.form));
+      axios.post(this.api, this.form)
+      .then(response => {
+        this.$toasted.show(response.data.m, { 
+          position:'top-right', 
+          duration: 5000,
+          type: 'success'
+        })
+        this.onReset(evt)
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
     },
+
     onReset (evt) {
       evt.preventDefault();
       /* Reset our form values */
@@ -211,11 +217,7 @@ export default {
   } 
 }
 
-
 </script>
-
-
-
 
 <style scoped>
 
