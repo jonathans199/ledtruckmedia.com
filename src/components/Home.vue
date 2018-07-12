@@ -16,7 +16,10 @@
             </a>
           </b-col>
           <b-col class="header__menu-right text-center">
-            <a href="tel:917-224-3336">917-224-3336</a>
+            <a href="tel:917-224-3336">917-224-3336</a>&nbsp;
+            <a class="fab fa-facebook-square" href="http://www.facebook.com" target="_blank"></a>&nbsp;
+            <a class="fab fa-instagram" href="http://www.twitter.com" target="_blank"></a>&nbsp;
+            <a class="fab fa-twitter-square" href="http://www.instragram.com" target="_blank"></a>
           </b-col>
       </b-row>
     </b-container>
@@ -24,7 +27,7 @@
     <b-container class="boxes-3 col-12">
       <b-row>
         <b-col class="3-boxes__left text-center">
-          <img class="boxes-3__truck-side" src="../assets/img/truck_side.png" alt="">
+          <img class="boxes-3__truck-side" src="../assets/img/side-truck-add.png" alt="">
           <h3>SIDE PANEL</h3>
           <strong> 120" Diagonal HD </strong>
           <p>30 sec spot / 15 sec spot</p>
@@ -32,7 +35,7 @@
           <b-button variant="outline-success" href="#"> Buy Ad now</b-button>
         </b-col>
         <b-col class="3-boxes__middle text-center">
-          <img class="boxes-3__truck-back" src="../assets/img/truck_back.png" alt="">
+          <img class="boxes-3__truck-back" src="../assets/img/back-truck-add.png" alt="">
           <h3>BACK PANEL</h3>
           <strong>720" Square HD </strong>
           <p>30 sec spot / 15 sec spot </p>
@@ -40,7 +43,7 @@
           <b-button variant="outline-success" href="#"> Contact us</b-button>
         </b-col>
         <b-col class="3-boxes__right text-center">
-          <img class="boxes-3__truck-full" src="../assets/img/truck_side.png" alt="">
+          <img class="boxes-3__truck-full" src="../assets/img/frontside-truck-add.png" alt="">
           <h3>FULL TRUCK</h3>
           <strong>6 hour shift custom route </strong>
           <p>Video, Live Stream, </p>
@@ -61,10 +64,10 @@
       </b-row>
       <b-row class="text-center">
         <b-col>
-          <img src="../assets/img/stat_1.png" alt="">
+          <img src="../assets/img/statistics_1 copy.png" alt="" style="width:100%;height:auto;">
         </b-col>
         <b-col>
-          <img src="../assets/img/stat_2.png" alt="">
+          <img src="../assets/img/statistics_2 copy.png" alt="" style="width:100%;height:auto;">
         </b-col>
       </b-row>
     </b-container>
@@ -127,7 +130,7 @@
     <b-container>
       <b-row class="text-center">
         <b-col class="md-6 my-5">
-          <strong>Start a Project</strong>
+          <strong>Start a Project</strong></br>
           <a href="mailto:info@ledtruckmedia.com">info@ledtruckmedia.com</a>
         </b-col>
         <b-col class="md-6 my-5">
@@ -208,6 +211,7 @@ export default {
   } 
 }
 
+
 </script>
 
 
@@ -286,11 +290,11 @@ export default {
 }
 
 .boxes-3__truck-side {
-  
+
 }
 
 .boxes-3__truck-back {
-  
+
 }
 
 .boxes-3__truck-full {
@@ -298,8 +302,11 @@ export default {
 }
 
 /* Statistics section  */
+
+
+
 .statistics {
-  height: 35rem;
+  height: responsive;
   background-color: #232323;
   color: #eee;
 }
@@ -363,4 +370,5 @@ li {
 a {
   color: #eee;
 }
+
 </style>
