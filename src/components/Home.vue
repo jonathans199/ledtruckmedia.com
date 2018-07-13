@@ -539,7 +539,7 @@ export default {
 }
 
 .footer__last {
-  padding: 100px;
+  padding: 20px;
   background-color: #232323db;
 }
 
@@ -565,6 +565,10 @@ li {
 }
 a {
   color: #eee;
+}
+
+p {
+  align-content: center;
 }
 
 </style>
