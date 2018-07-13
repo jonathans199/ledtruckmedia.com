@@ -182,7 +182,7 @@ export default {
         checked: []
       },
       show: true,
-      api: 'https://api.ledtruckmedia.com/'
+      api: '/api/contact'
     }
   },
 
