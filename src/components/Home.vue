@@ -4,6 +4,7 @@
     <div class="video__overlay"></div>
     <div class="video__container">
       <video-bg :sources="['/video.mp4']" class="d-none d-md-block d-xs-none"></video-bg>
+      <video-bg :sources="['/responsive.mp4']" class="d-block d-sm-none" ></video-bg>
     </div>
     <div class="header">
       <div class="header__menu-left">
@@ -22,77 +23,96 @@
       </div>
     </div>
 
-    <!-- <b-container class="boxes-3 col-12">
+
+    <div class="header-mobile">
+      <div class="row text-center">
+        <div class="col-12">
+          <a href="/home">
+            <img class="header__logo " src="../assets/img/ltm_dark.png" alt="">
+          </a>
+        </div>
+        <div class="col-12">
+          <a href="tel:917-224-3336">917-224-3336</a>&nbsp;
+          <a class="fab fa-facebook-square" href="https://www.facebook.com/LED-Truck-Media-1575325705912466/" target="_blank"></a>&nbsp;
+          <a class="fab fa-instagram" href="https://www.instagram.com/ledtruckmedia/" target="_blank"></a>&nbsp;
+          <a class="fab fa-youtube" href="https://www.youtube.com/channel/UCqviwhdR9IIxiOHTpalhhLw" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+
+    <b-container class="boxes-3 col-12">
       <b-row>
-        <b-col class="3-boxes__left text-center">
-          <img class="boxes-3__truck-side" src="../assets/img/side-truck-add.png" alt="">
-          <h3>SIDE PANEL</h3>
-          <strong> 120" Diagonal HD </strong>
-          <p>30 sec spot / 15 sec spot</p>
-          <p>Animation, Video or Still Image </p>
-          <b-button variant="outline-success" href="#"> Buy Ad now</b-button>
+
+        <b-col class="text-center">
+          <h1>YOUR ADS ON OUR TRUCKS</h1>
+          <button class="home__button" v-on:click="goToByScroll(10)" >Request A Quote!</button>
         </b-col>
-        <b-col class="3-boxes__middle text-center">
-          <img class="boxes-3__truck-back" src="../assets/img/back-truck-add.png" alt="">
-          <h3>BACK PANEL</h3>
-          <strong>720" Square HD </strong>
-          <p>30 sec spot / 15 sec spot </p>
-          <p>Animation or Still Image </p>
-          <b-button variant="outline-success" href="#"> Contact us</b-button>
-        </b-col>
-        <b-col class="3-boxes__right text-center">
-          <img class="boxes-3__truck-full" src="../assets/img/frontside-truck-add.png" alt="">
-          <h3>FULL TRUCK</h3>
-          <strong>6 hour shift custom route </strong>
-          <p>Video, Live Stream, </p>
-          <p>Private Events </p>
-          <b-button variant="outline-success" href="#"> Start Today</b-button>
-        </b-col>
+       
       </b-row>
-    </b-container> -->
+    </b-container>
 
   </section>
 
-  <section class="trucks__section">
-    <div class="trucks___section--fulltruck px-5 my-5">
-      <h2 class="fulltruck">FULL TRUCK EXCLUSIVE</h2>
-      <p>Our full truck exclusive gives you the advantage to design your full campaign. Choose the ads you want to be placed on the sides and back of our LED billboard, and customize your route to reach your desired target demographics.</p>
-    </div>
-    <div class="trucks__section--otheroptions">
-      <img class="boxes-3__truck-full" src="../assets/img/frontside-truck-add.png" alt="">
-      <h2 class="sharedcampaing">SHARED CAMPAING</h2>
-      <p>Our shared campaigns give you the flexibility to share our Miami route with another 5-15 rotating ads, over the course of 6 hours.</p>
-      <div class="sidepanel">
-         <img class="boxes-3__truck-side" src="../assets/img/side-truck-add.png" alt="">
-        <h3>SIDE PANEL</h3>
-          <p> 120" Diagonal HD </p>
-          <p>30 sec spot / 15 sec spot</p>
-          <p>Animation, Video or Still Image </p>
+  <section class="trucks__section ">
+    <div class="container-fluid">
+      <div class="trucks___section--fulltruck text-center">
+        <h2 class="fulltruck">FULL TRUCK EXCLUSIVE</h2>
+        <div class="col-12 d-flex justify-content-center">
+          <p style="width:600px">Our full truck exclusive gives you the advantage to design your full campaign. Choose the ads you want to be placed on the sides and back of our LED billboard, and customize your route to reach your desired target demographics.</p>
+        </div>
+        <img class="boxes-3__truck-full" src="../assets/img/frontside-truck-add.png" alt="">
+        <h3>FULL TRUCK EXCLUSIVE</h3>
+        <strong>6 Hour shit custom route</strong>
+        <p>Vide, Live Stream,</p>
+        <p>Private Events</p>
       </div>
-      <div class="backpanel">
-         <img class="boxes-3__truck-back" src="../assets/img/back-truck-add.png" alt="">
-          <h3>FULL TRUCK</h3>
-          <strong>6 hour shift custom route </strong>
-          <p>Video, Live Stream, </p>
-          <p>Private Events </p>
+      <div class="trucks__section--otheroptions text-center">
+        <h2 class="fulltruck ">SHARED CAMPAING</h2>
+        <div class="col-12 d-flex justify-content-center">
+          <p style="width:600px">Our shared campaigns give you the flexibility to share our Miami route with another 5-15 rotating ads, over the course of 6 hours.</p>
+        </div>
+        <b-row class="text-center" style="margin-top:80px">
+          <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+            <div class="sidepanel">
+              <img class="boxes-3__truck-side" src="../assets/img/side-truck-add.png" alt="">
+              <h3>SIDE PANEL</h3>
+                <strong> 120" Diagonal HD </strong>
+                <p>30 sec spot / 15 sec spot</p>
+                <p>Animation, Video or Still Image </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-2 col-md-2 col-lg-2 d-flex align-items-center justify-content-center">
+            <h1>OR</h1>
+          </div>
+          <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+            <div class="sidepanel">
+              <img class="boxes-3__truck-back" src="../assets/img/back-truck-add.png" alt="">
+              <h3>BACK PANEL</h3>
+                <strong> 720" Square HD </strong>
+                <p>30 sec spot / 15 sec spot</p>
+                <p>Animation, Video or Still Image </p>
+            </div>
+          </div>
+        </b-row>
       </div>
     </div>
+    
   </section>
 
   <section class="statistics">
-    <b-container col-12>
+    <b-container col-12 class="text-center">
       <b-row>
         <b-col>
           <h3 class="my-4git  statistics__title">THE STATISTICS SPEAK FOR THEMSELVES</h3>
         </b-col>
       </b-row>
       <b-row class="text-center statistics__images">
-        <b-col>
+        <div class="col-12 col-sm-6">
           <img src="../assets/img/statistics_1 copy.png" alt="" style="width:100%;height:auto;">
-        </b-col>
-        <b-col>
+        </div>
+        <div class="col-12 col-sm-6">
           <img src="../assets/img/statistics_2 copy.png" alt="" style="width:100%;height:auto;">
-        </b-col>
+        </div>
       </b-row>
       <b-row class="text-center statistics__contact">
         <button v-on:click="goToByScroll(10)" > COTNACT US TODAY</button>
@@ -286,8 +306,8 @@ export default {
 
 <style scoped>
 
-.video__container {
-  
+.trucks__section--otheroptions {
+  margin-top: 80px
 }
 
 .home__top {
@@ -330,6 +350,24 @@ export default {
   align-content: center;
   /* text-align: center; */
 }
+.header-mobile{
+  display: none;
+  
+}
+@media (max-width: 576px){
+  .header {
+    display: none
+  }
+  .header-mobile {
+    position: absolute;
+    top: 1rem;
+    z-index: 3;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-content: center;
+  }
+}
 
 .header__logo-box {
 
@@ -345,6 +383,8 @@ export default {
 }
 
 .trucks__section {
+  padding: 25px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -360,10 +400,20 @@ export default {
 .boxes-3 {
   z-index: 4;
   position: absolute;
-  bottom: 3rem;
+  bottom: 10rem;
   color: #eee;
 }
 
+.home__button  {
+  margin-top: 20px;
+  color: white;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px;
+  padding-right: 100px;
+  padding-left: 100px;
+  cursor: pointer;
+}
 .btn {
   border-color: white;
   border-radius: 1px;
@@ -384,7 +434,7 @@ export default {
 /* Statistics section  */
 
 .statistics {
-  height: 50rem;
+  /* height: 50rem; */
   padding: 25px;
   padding-top: 50px;
   background-color: #232323;
