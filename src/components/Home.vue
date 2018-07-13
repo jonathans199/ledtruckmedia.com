@@ -101,6 +101,21 @@
   </section>
 
   <section class="divider-1">
+    <div class="divider-1__overlay">
+      <div class="divider-1__container">
+        <b-row>
+          <div class="col-12">
+            <h3 style="padding: 10px;">info@ledtruckmedia.com</h3>
+
+            <div class="divider-1__content col-12  text-center">
+              <h1>917-224-3336</h1>
+            </div>
+            <h4 class="divider-1__address">400 NW 26 ST, Miami, Fl 33127</h4>
+          </div>
+          
+        </b-row>
+      </div>
+    </div>
   </section>
 
   <section class="contact" id="10">
@@ -112,7 +127,7 @@
         </b-col>
       </b-row>
       <b-row>
-        <div class="contact__form">
+        <div class="contact__form col-12 col-sm-12 col-md-5 col-md-5">
           <b-form @submit="onSubmit" @reset="onReset" v-if="show">
             <b-form-group id="exampleInputGroup2">
               <b-form-input id="exampleInput2"
@@ -144,7 +159,7 @@
             <b-form-group class="float-right col-12">
               <b-row>
                 <span class="float-left col-4">
-                Required *
+
               </span>
               <div class="col-8">
                 <b-button 
@@ -164,7 +179,7 @@
     </b-container>
   </section>
 
-  <section class="footer">
+  <!-- <section class="footer">
     <b-container>
       <b-row class="text-center">
         <b-col class="md-6 my-5">
@@ -185,7 +200,7 @@
       </b-row>
     </b-container>
 
-  </section>
+  </section> -->
 
   <section class="footer__last">
     <b-container col-12 class="text-center">
@@ -333,7 +348,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #232323;
+  background-color: #232323db;
   color: #eee;
 }
 
@@ -396,11 +411,47 @@ export default {
   padding-left: 100px;
   cursor: pointer;
 }
+
+.divider-1__overlay {
+  opacity: 1;
+  /* position: ab; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  z-index: 0;
+}
+
+.divider-1__address {
+  padding-top: 10px;
+  background-color: black;
+  opacity: 1.4;
+  padding-bottom: 10px;
+}
+.divider-1__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white
+}
+
+.divider-1__content {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .divider-1 {
-  padding-bottom: 20px;
-  height: 35rem;
-  background-image: url("https://i.ytimg.com/vi/EDlBV8gZS4U/maxresdefault.jpg");
-  color: #eee;
+  background-image: url("/ledtruckimage.png");
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
 }
 
 .contact {
@@ -438,7 +489,8 @@ export default {
 }
 
 .footer__last {
-  background-color: #232323;
+  padding: 100px;
+  background-color: #232323db;
 }
 
 h1, h2, h3 {
