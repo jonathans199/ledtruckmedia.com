@@ -62,7 +62,7 @@
           <h3 class="my-4git  statistics__title">THE STATISTICS SPEAK FOR THEMSELVES</h3>
         </b-col>
       </b-row>
-      <b-row class="text-center">
+      <b-row class="text-center statistics__images">
         <b-col>
           <img src="../assets/img/statistics_1 copy.png" alt="" style="width:100%;height:auto;">
         </b-col>
@@ -70,13 +70,16 @@
           <img src="../assets/img/statistics_2 copy.png" alt="" style="width:100%;height:auto;">
         </b-col>
       </b-row>
+      <b-row class="text-center statistics__contact">
+        <button v-on:click="goToByScroll(10)" > COTNACT US TODAY</button>
+      </b-row>
     </b-container>
   </section>
 
   <section class="divider-1">
   </section>
 
-  <section class="contact">
+  <section class="contact" id="10">
     <b-container col-12 class="text-center">
       <b-row>
         <b-col>
@@ -84,45 +87,56 @@
         <h3 class="my-5 contact__title">GET IN TOUCH</h3>
         </b-col>
       </b-row>
+      <b-row>
+        <div class="contact__form">
+          <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+            <b-form-group id="exampleInputGroup2">
+              <b-form-input id="exampleInput2"
+                            type="text"
+                            v-model="form.name"
+                            required
+                            placeholder="NAME">
+              </b-form-input>
+            </b-form-group>
 
-      <div class="contact__form">
-        <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-          <b-form-group id="exampleInputGroup1"
-                        description="We'll never share your email with anyone else.">
-            <b-form-input id="exampleInput1"
-                          type="email"
-                          v-model="form.email"
-                          required
-                          placeholder="EMAIL">
-            </b-form-input>
-          </b-form-group>
-          <b-form-group id="exampleInputGroup2">
-            <b-form-input id="exampleInput2"
-                          type="text"
-                          v-model="form.name"
-                          required
-                          placeholder="NAME">
-            </b-form-input>
-          </b-form-group>
-          <b-form-group id="exampleInputGroup3"
-                        label="Message"
-                        label-for="exampleInput3"
-                        placeholder="MESSAGE">
-            <b-form-textarea id="exampleInput3"
-                          required
-                          v-model="form.message">
-            </b-form-textarea>
-          </b-form-group>
-          <b-form-group id="exampleGroup4">
-            <b-form-checkbox-group v-model="form.checked" id="exampleChecks">
-              <b-form-checkbox value="me">Contact me via Email</b-form-checkbox>
-              <b-form-checkbox value="that">Contact me via Phone</b-form-checkbox>
-            </b-form-checkbox-group>
-          </b-form-group>
-          <b-button type="submit" variant="outline-success">Submit</b-button>
-          <b-button type="reset" variant="outline-success">Reset</b-button>
-        </b-form>
-      </div>
+            <b-form-group id="exampleInputGroup1">
+              <b-form-input id="exampleInput1"
+                            type="email"
+                            v-model="form.email"
+                            required
+                            placeholder="EMAIL">
+              </b-form-input>
+            </b-form-group>
+            <b-form-group id="exampleInputGroup3"
+                          label-for="exampleInput3"
+                          >
+              <b-form-textarea id="exampleInput3"
+                            required
+                            rows="9"
+                            placeholder="MESSAGE"
+                            v-model="form.message">
+              </b-form-textarea>
+            </b-form-group>
+            <b-form-group class="float-right col-12">
+              <b-row>
+                <span class="float-left col-4">
+                Required *
+              </span>
+              <div class="col-8">
+                <b-button 
+                  type="submit" 
+                  variant="outline-success"
+                  class="contact__submit float-right"
+                  >Submit
+                </b-button>
+              </div>
+              </b-row>
+              
+              
+            </b-form-group>
+          </b-form>
+        </div>
+      </b-row>
     </b-container>
   </section>
 
@@ -164,6 +178,7 @@
 </template>
 
 <script>
+import jQuery from "jquery";
 import VideoBg from 'vue-videobg'
 import axios from 'axios'
 import Toasted from 'vue-toasted'
@@ -191,6 +206,14 @@ export default {
   },
 
   methods: {
+
+    goToByScroll(id) {
+      jQuery("html,body").animate(
+        { scrollTop: jQuery("#" + id).offset().top },
+        "slow"
+      );
+    },
+
     onSubmit (evt) {
       evt.preventDefault();
       axios.post(this.api, this.form)
@@ -304,16 +327,34 @@ export default {
 
 /* Statistics section  */
 
-
-
 .statistics {
-
   height: 50rem;
-
+  padding: 25px;
+  padding-top: 50px;
   background-color: #232323;
   color: #eee;
 }
 
+.statistics__images {
+  padding-top: 50px
+}
+
+.statistics__contact {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistics__contact > button {
+  color: white;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px;
+  padding-right: 100px;
+  padding-left: 100px;
+  cursor: pointer;
+}
 .divider-1 {
   padding-bottom: 20px;
   height: 35rem;
@@ -322,7 +363,7 @@ export default {
 }
 
 .contact {
-  height: 42rem;
+  /* height: 42rem; */
   background-color: #232323;
   color: #eee;
 }
@@ -330,6 +371,14 @@ export default {
 .contact__form {
   width: 30%;
   margin: 0 auto;
+}
+
+.contact__submit {
+  border: #eee 1px solid;
+  border-radius: 5px;
+  color: white !important;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .form-control {
