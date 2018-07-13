@@ -5,26 +5,24 @@
     <div class="video__container">
       <video-bg :sources="['/video.mp4']" class="d-none d-md-block d-xs-none"></video-bg>
     </div>
-    <b-container class="header">
-      <b-row>
-          <b-col class="header__menu-left text-center">
-            <a href="mailto:info@ledtruckmedia.com">info@ledtruckmedia.com</a>
-          </b-col>
-          <b-col class="header__logo-box text-center">
-            <a href="/home">
-              <img class="header__logo " src="../assets/img/ltm_dark.png" alt="">
-            </a>
-          </b-col>
-          <b-col class="header__menu-right text-center">
-            <a href="tel:917-224-3336">917-224-3336</a>&nbsp;
-            <a class="fab fa-facebook-square" href="https://www.facebook.com/LED-Truck-Media-1575325705912466/" target="_blank"></a>&nbsp;
-            <a class="fab fa-instagram" href="https://www.instagram.com/ledtruckmedia/?hl=en" target="_blank"></a>&nbsp;
-            <a class="fab fa-youtube" href="https://www.youtube.com/channel/UCqviwhdR9IIxiOHTpalhhLw" target="_blank"></a>
-          </b-col>
-      </b-row>
-    </b-container>
+    <div class="header">
+      <div class="header__menu-left">
+        <a href="mailto:info@ledtruckmedia.com">info@ledtruckmedia.com</a>
+      </div>
+      <div class="header__logo-box">
+        <a href="/home">
+          <img class="header__logo " src="../assets/img/ltm_dark.png" alt="">
+        </a>
+      </div>
+      <div class="header__menu-right text-center">
+        <a href="tel:917-224-3336">917-224-3336</a>&nbsp;
+        <a class="fab fa-facebook-square" href="https://www.facebook.com/LED-Truck-Media-1575325705912466/" target="_blank"></a>&nbsp;
+        <a class="fab fa-instagram" href="https://www.instagram.com/ledtruckmedia/" target="_blank"></a>&nbsp;
+        <a class="fab fa-youtube" href="https://www.youtube.com/channel/UCqviwhdR9IIxiOHTpalhhLw" target="_blank"></a>
+      </div>
+    </div>
 
-    <b-container class="boxes-3 col-12">
+    <!-- <b-container class="boxes-3 col-12">
       <b-row>
         <b-col class="3-boxes__left text-center">
           <img class="boxes-3__truck-side" src="../assets/img/side-truck-add.png" alt="">
@@ -51,8 +49,34 @@
           <b-button variant="outline-success" href="#"> Start Today</b-button>
         </b-col>
       </b-row>
-    </b-container>
+    </b-container> -->
 
+  </section>
+
+  <section class="trucks__section">
+    <div class="trucks___section--fulltruck px-5 my-5">
+      <h2 class="fulltruck">FULL TRUCK EXCLUSIVE</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odio, reprehenderit eveniet, amet aperiam consectetur blanditiis quam eaque facilis asperiores deserunt velit sint quia? Reprehenderit culpa veritatis officia quis ducimus!</p>
+    </div>
+    <div class="trucks__section--otheroptions">
+      <img class="boxes-3__truck-full" src="../assets/img/frontside-truck-add.png" alt="">
+      <h2 class="sharedcampaing">SHARED CAMPAING</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga praesentium fugit recusandae delectus, tempora eos? Cum numquam nobis iure tempore eaque nulla. Minima modi corporis esse? Assumenda aut temporibus cupiditate?</p>
+      <div class="sidepanel">
+         <img class="boxes-3__truck-side" src="../assets/img/side-truck-add.png" alt="">
+        <h3>SIDE PANEL</h3>
+          <strong> 120" Diagonal HD </strong>
+          <p>30 sec spot / 15 sec spot</p>
+          <p>Animation, Video or Still Image </p>
+      </div>
+      <div class="backpanel">
+         <img class="boxes-3__truck-back" src="../assets/img/back-truck-add.png" alt="">
+          <h3>FULL TRUCK</h3>
+          <strong>6 hour shift custom route </strong>
+          <p>Video, Live Stream, </p>
+          <p>Private Events </p>
+      </div>
+    </div>
   </section>
 
   <section class="statistics">
@@ -281,12 +305,13 @@ export default {
 }
 
 .header {
+  width: 100%;
   position: absolute;
   top: 1rem;
   z-index: 3;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
   /* text-align: center; */
 }
@@ -300,6 +325,22 @@ export default {
 .header__logo {
   height: 6rem;
 }
+
+.header__menu-left {
+}
+
+.trucks__section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #232323;
+  color: #eee;
+}
+
+.trucks___section--fulltruck {
+  
+}
+
 
 .boxes-3 {
   z-index: 4;
