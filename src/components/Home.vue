@@ -16,9 +16,9 @@
       </div>
       <div class="header__menu-right text-center">
         <a href="tel:917-224-3336">917-224-3336</a>&nbsp;
-        <a class="fab fa-facebook-square" href="http://www.facebook.com" target="_blank"></a>&nbsp;
-        <a class="fab fa-instagram" href="http://www.twitter.com" target="_blank"></a>&nbsp;
-        <a class="fab fa-twitter-square" href="http://www.instragram.com" target="_blank"></a>
+        <a class="fab fa-facebook-square" href="https://www.facebook.com/LED-Truck-Media-1575325705912466/" target="_blank"></a>&nbsp;
+        <a class="fab fa-instagram" href="https://www.instagram.com/ledtruckmedia/" target="_blank"></a>&nbsp;
+        <a class="fab fa-youtube" href="https://www.youtube.com/channel/UCqviwhdR9IIxiOHTpalhhLw" target="_blank"></a>
       </div>
     </div>
 
@@ -54,7 +54,7 @@
   </section>
 
   <section class="trucks__section">
-    <div class="trucks___section--fulltruck">
+    <div class="trucks___section--fulltruck px-5 my-5">
       <h2 class="fulltruck">FULL TRUCK EXCLUSIVE</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odio, reprehenderit eveniet, amet aperiam consectetur blanditiis quam eaque facilis asperiores deserunt velit sint quia? Reprehenderit culpa veritatis officia quis ducimus!</p>
     </div>
@@ -337,6 +337,9 @@ export default {
   color: #eee;
 }
 
+.trucks___section--fulltruck {
+  
+}
 
 
 .boxes-3 {
