@@ -56,16 +56,16 @@
   <section class="trucks__section">
     <div class="trucks___section--fulltruck px-5 my-5">
       <h2 class="fulltruck">FULL TRUCK EXCLUSIVE</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odio, reprehenderit eveniet, amet aperiam consectetur blanditiis quam eaque facilis asperiores deserunt velit sint quia? Reprehenderit culpa veritatis officia quis ducimus!</p>
+      <p>Our full truck exclusive gives you the advantage to design your full campaign. Choose the ads you want to be placed on the sides and back of our LED billboard, and customize your route to reach your desired target demographics.</p>
     </div>
     <div class="trucks__section--otheroptions">
       <img class="boxes-3__truck-full" src="../assets/img/frontside-truck-add.png" alt="">
       <h2 class="sharedcampaing">SHARED CAMPAING</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga praesentium fugit recusandae delectus, tempora eos? Cum numquam nobis iure tempore eaque nulla. Minima modi corporis esse? Assumenda aut temporibus cupiditate?</p>
+      <p>Our shared campaigns give you the flexibility to share our Miami route with another 5-15 rotating ads, over the course of 6 hours.</p>
       <div class="sidepanel">
          <img class="boxes-3__truck-side" src="../assets/img/side-truck-add.png" alt="">
         <h3>SIDE PANEL</h3>
-          <strong> 120" Diagonal HD </strong>
+          <p> 120" Diagonal HD </p>
           <p>30 sec spot / 15 sec spot</p>
           <p>Animation, Video or Still Image </p>
       </div>
@@ -489,7 +489,7 @@ export default {
 }
 
 .footer__last {
-  padding: 100px;
+  padding: 20px;
   background-color: #232323db;
 }
 
@@ -515,6 +515,10 @@ li {
 }
 a {
   color: #eee;
+}
+
+p {
+  align-content: center;
 }
 
 </style>
