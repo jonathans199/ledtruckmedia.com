@@ -17,9 +17,9 @@
           </b-col>
           <b-col class="header__menu-right text-center">
             <a href="tel:917-224-3336">917-224-3336</a>&nbsp;
-            <a class="fab fa-facebook-square" href="http://www.facebook.com" target="_blank"></a>&nbsp;
-            <a class="fab fa-instagram" href="http://www.twitter.com" target="_blank"></a>&nbsp;
-            <a class="fab fa-twitter-square" href="http://www.instragram.com" target="_blank"></a>
+            <a class="fab fa-facebook-square" href="https://www.facebook.com/LED-Truck-Media-1575325705912466/" target="_blank"></a>&nbsp;
+            <a class="fab fa-instagram" href="https://www.instagram.com/ledtruckmedia/?hl=en" target="_blank"></a>&nbsp;
+            <a class="fab fa-youtube" href="https://www.youtube.com/channel/UCqviwhdR9IIxiOHTpalhhLw" target="_blank"></a>
           </b-col>
       </b-row>
     </b-container>
