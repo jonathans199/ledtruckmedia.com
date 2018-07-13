@@ -77,6 +77,10 @@
   </section>
 
   <section class="divider-1">
+    <div class="divider-1__overlay"></div>
+    <div class="divider-1__content">
+      hola
+    </div>
   </section>
 
   <section class="contact" id="10">
@@ -355,11 +359,24 @@ export default {
   padding-left: 100px;
   cursor: pointer;
 }
+
+.divider-1__overlay {
+  opacity: 0.8;
+  /* position: ab; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  z-index: 0;
+}
+
 .divider-1 {
-  padding-bottom: 20px;
-  height: 35rem;
-  background-image: url("https://i.ytimg.com/vi/EDlBV8gZS4U/maxresdefault.jpg");
-  color: #eee;
+  background-image: url("/ledtruckimage.png");
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
 }
 
 .contact {
