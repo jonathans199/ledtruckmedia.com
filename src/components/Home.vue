@@ -59,7 +59,7 @@
     <b-container col-12>
       <b-row>
         <b-col>
-          <h3 class="my-5 statistics__title">THE STATISTICS SPEAK FOR THEMSELVES</h3>
+          <h3 class="my-4git  statistics__title">THE STATISTICS SPEAK FOR THEMSELVES</h3>
         </b-col>
       </b-row>
       <b-row class="text-center">
@@ -314,6 +314,7 @@ export default {
 }
 
 .divider-1 {
+  padding-bottom: 20px;
   height: 35rem;
   background-image: url("https://i.ytimg.com/vi/EDlBV8gZS4U/maxresdefault.jpg");
   color: #eee;
