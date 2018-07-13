@@ -5,7 +5,7 @@
     <div class="video__container">
       <video-bg :sources="['/video.mp4']" class="d-none d-md-block d-xs-none"></video-bg>
     </div>
-    <b-container class="header col-12">
+    <b-container class="header">
       <b-row>
           <b-col class="header__menu-left text-center">
             <a href="mailto:info@ledtruckmedia.com">info@ledtruckmedia.com</a>
@@ -96,7 +96,7 @@
                           placeholder="EMAIL">
             </b-form-input>
           </b-form-group>
-          <b-form-group id="exampleInputGroup2"
+          <b-form-group id="exampleInputGroup2">
             <b-form-input id="exampleInput2"
                           type="text"
                           v-model="form.name"
@@ -130,8 +130,11 @@
     <b-container>
       <b-row class="text-center">
         <b-col class="md-6 my-5">
+
           <strong>Start a Project</strong></br>
+
           <a href="mailto:info@ledtruckmedia.com">info@ledtruckmedia.com</a>
+          </p>
         </b-col>
         <b-col class="md-6 my-5">
           <strong>Say hello</strong>
@@ -183,6 +186,7 @@ export default {
       },
       show: true,
       api: '/api/contact'
+
     }
   },
 
@@ -199,7 +203,6 @@ export default {
         this.onReset(evt)
       })
       .catch(function (error) {
-        console.log(error);
       })
     },
 
@@ -258,25 +261,21 @@ export default {
   position: absolute;
   top: 1rem;
   z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
   /* text-align: center; */
 }
 
 .header__logo-box {
-  display: flex;
-  justify-content: center;
-  margin: auto 0;
+
+  
+  /* margin: auto 0; */
 }
 
 .header__logo {
   height: 6rem;
-}
-
-.header__menu-left {
-  
-}
-
-.header__menu-right {
-
 }
 
 .boxes-3 {
@@ -308,7 +307,9 @@ export default {
 
 
 .statistics {
-  height: responsive;
+
+  height: 50rem;
+
   background-color: #232323;
   color: #eee;
 }
