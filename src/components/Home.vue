@@ -53,7 +53,7 @@
 
   </section>
 
-  <section class="trucks__section ">
+  <section class="trucks__section">
     <div class="container-fluid">
       <div class="trucks___section--fulltruck text-center">
         <h2 class="fulltruck">FULL TRUCK EXCLUSIVE</h2>
@@ -63,8 +63,7 @@
         <img class="boxes-3__truck-full" src="../assets/img/frontside-truck-add.png" alt="">
         <h3>FULL TRUCK EXCLUSIVE</h3>
         <strong>6 Hour shit custom route</strong>
-        <p>Vide, Live Stream,</p>
-        <p>Private Events</p>
+        <p>Vide, Live Stream,</br>Private Events</p>
       </div>
       <div class="trucks__section--otheroptions text-center">
         <h2 class="fulltruck ">SHARED CAMPAING</h2>
@@ -77,8 +76,7 @@
               <img class="boxes-3__truck-side" src="../assets/img/side-truck-add.png" alt="">
               <h3>SIDE PANEL</h3>
                 <strong> 120" Diagonal HD </strong>
-                <p>30 sec spot / 15 sec spot</p>
-                <p>Animation, Video or Still Image </p>
+                <p>30 sec spot / 15 sec spot</br>Animation, Video or Still Image </p>
             </div>
           </div>
           <div class="col-12 col-sm-2 col-md-2 col-lg-2 d-flex align-items-center justify-content-center">
@@ -89,8 +87,7 @@
               <img class="boxes-3__truck-back" src="../assets/img/back-truck-add.png" alt="">
               <h3>BACK PANEL</h3>
                 <strong> 720" Square HD </strong>
-                <p>30 sec spot / 15 sec spot</p>
-                <p>Animation, Video or Still Image </p>
+                <p>30 sec spot / 15 sec spot</br>Animation, Video or Still Image </p>
             </div>
           </div>
         </b-row>
@@ -115,7 +112,7 @@
         </div>
       </b-row>
       <b-row class="text-center statistics__contact">
-        <button v-on:click="goToByScroll(10)" > COTNACT US TODAY</button>
+        <button v-on:click="goToByScroll(10)" >BOOK NOW!</button>
       </b-row>
     </b-container>
   </section>
@@ -385,6 +382,7 @@ export default {
 .trucks__section {
   padding: 25px;
   padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -428,7 +426,7 @@ export default {
 }
 
 .boxes-3__truck-full {
-  
+  margin-top: 50px;
 }
 
 /* Statistics section  */
