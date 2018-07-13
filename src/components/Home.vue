@@ -59,7 +59,7 @@
     <b-container col-12>
       <b-row>
         <b-col>
-          <h3 class="my-5 statistics__title">THE STATISTICS SPEAK FOR THEMSELVES</h3>
+          <h3 class="my-4git  statistics__title">THE STATISTICS SPEAK FOR THEMSELVES</h3>
         </b-col>
       </b-row>
       <b-row class="text-center">
@@ -130,8 +130,9 @@
     <b-container>
       <b-row class="text-center">
         <b-col class="md-6 my-5">
-          <strong>Start a Project</strong>
-          <p>
+
+          <strong>Start a Project</strong></br>
+
           <a href="mailto:info@ledtruckmedia.com">info@ledtruckmedia.com</a>
           </p>
         </b-col>
@@ -184,7 +185,8 @@ export default {
         checked: []
       },
       show: true,
-      api: 'https://api.ledtruckmedia.com/'
+      api: '/api/contact'
+
     }
   },
 
@@ -305,12 +307,15 @@ export default {
 
 
 .statistics {
+
   height: 50rem;
+
   background-color: #232323;
   color: #eee;
 }
 
 .divider-1 {
+  padding-bottom: 20px;
   height: 35rem;
   background-image: url("https://i.ytimg.com/vi/EDlBV8gZS4U/maxresdefault.jpg");
   color: #eee;
