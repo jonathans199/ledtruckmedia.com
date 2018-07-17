@@ -8,11 +8,11 @@
     </div>
     <div class="header">
       <div class="header__menu-left">
-        <a href="mailto:info@ledtruckmedia.com">info@ledtruckmedia.com</a>
+        <a href="mailto:sales@ledtruckmedia.com">sales@ledtruckmedia.com</a>
       </div>
       <div class="header__logo-box">
         <a href="/home">
-          <img class="header__logo " src="../assets/img/ltm_dark.png" alt="">
+          <img class="header__logo " src="../assets/img/LEDTRCUKMEDIA-LOGO.png" alt="">
         </a>
       </div>
       <div class="header__menu-right text-center">
@@ -28,7 +28,7 @@
       <div class="row text-center">
         <div class="col-12">
           <a href="/home">
-            <img class="header__logo " src="../assets/img/ltm_dark.png" alt="">
+            <img class="header__logo " src="../assets/img/LEDTRCUKMEDIA-LOGO.png" alt="">
           </a>
         </div>
         <div class="col-12">
@@ -62,11 +62,11 @@
         </div>
         <img class="boxes-3__truck-full" src="../assets/img/frontside-truck-add.png" alt="">
         <h3>FULL TRUCK EXCLUSIVE</h3>
-        <strong>6 Hour shit custom route</strong>
-        <p>Vide, Live Stream,</br>Private Events</p>
+        <strong>6 Hour shift custom route</strong>
+        <p>Video, Live Stream,</br>Private Events</p>
       </div>
       <div class="trucks__section--otheroptions text-center">
-        <h2 class="fulltruck ">SHARED CAMPAING</h2>
+        <h2 class="fulltruck ">SHARED CAMPAIGN</h2>
         <div class="col-12 d-flex justify-content-center">
           <p style="width:600px">Our shared campaigns give you the flexibility to share our Miami route with another 5-15 rotating ads, over the course of 6 hours.</p>
         </div>
@@ -112,7 +112,7 @@
         </div>
       </b-row>
       <b-row class="text-center statistics__contact">
-        <button v-on:click="goToByScroll(10)" >BOOK NOW!</button>
+        <button v-on:click="goToByScroll(10)" >CONTACT US TODAY</button>
       </b-row>
     </b-container>
   </section>
@@ -122,10 +122,10 @@
       <div class="divider-1__container">
         <b-row>
           <div class="col-12">
-            <h3 style="padding: 10px;">info@ledtruckmedia.com</h3>
+            <a class="mailto" style="padding: 10px;" href="mailto:sales@ledtruckmedia.com">sales@ledtruckmedia.com</a>
 
             <div class="divider-1__content col-12  text-center">
-              <h1>917-224-3336</h1>
+              <h1 class="num">917-224-3336</h1>
             </div>
             <h4 class="divider-1__address">400 NW 26 ST, Miami, Fl 33127</h4>
           </div>
@@ -139,7 +139,7 @@
     <b-container col-12 class="text-center">
       <b-row>
         <b-col>
-          <img class="footer__logo" src="../assets/img/ltm_dark.png" alt="">
+          <img class="footer__logo" src="../assets/img/LEDTRCUKMEDIA-LOGO.png" alt="">
         <h3 class="my-5 contact__title">GET IN TOUCH</h3>
         </b-col>
       </b-row>
@@ -178,7 +178,7 @@
                 <span class="float-left col-4">
 
               </span>
-              <div class="col-8">
+              <div class="col-4">
                 <b-button 
                   type="submit" 
                   variant="outline-success"
@@ -221,10 +221,15 @@
 
   <section class="footer__last">
     <b-container col-12 class="text-center">
-      <b-row>
-        <b-col>
-          <img src="../assets/img/asoftio_logo_final_dark.png" alt="">
-        </b-col>
+      <b-row class="text-center">
+        <div class="col-4 footer__last-text">
+          Design by
+        </div>
+        <div class="col-2 footer__last-image">
+          <a href="http://www.asoftio.com" target="blanck">
+          <img src="../assets/img/asoftio_logo_final_dark.png" alt="asoftio logo">
+          </a>
+        </div>
       </b-row>
     </b-container>
 
@@ -326,7 +331,7 @@ export default {
 }
 
 .video__overlay {
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -373,7 +378,7 @@ export default {
 }
 
 .header__logo {
-  height: 6rem;
+  height: 10rem;
 }
 
 .header__menu-left {
@@ -458,6 +463,7 @@ export default {
   padding-right: 100px;
   padding-left: 100px;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 
 .divider-1__overlay {
@@ -472,17 +478,19 @@ export default {
 }
 
 .divider-1__address {
-  padding-top: 10px;
+  padding: 10px;
   background-color: black;
   opacity: 1.4;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
+  align-content: center
 }
 .divider-1__container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  color: white
+  color: white;
+
 }
 
 .divider-1__content {
@@ -492,6 +500,7 @@ export default {
   width: 100%;
   padding-left: 40px;
   padding-right: 40px;
+  border-radius: 25px;
 }
 
 .divider-1 {
@@ -532,12 +541,13 @@ export default {
 }
 
 .footer__logo {
-  height: 6rem;
+  height: 10rem;
   margin-top: 4rem;
 }
 
 .footer__last {
-  padding: 20px;
+  align-items: right;
+  /* padding: 20px; */
   background-color: #232323db;
 }
 
@@ -569,4 +579,21 @@ p {
   align-content: center;
 }
 
+.num {
+    margin-bottom: 0px !important;
+}
+
+.mailto {
+  font-size: 30px;
+}
+
+.footer__last-text {
+  text-align: right;
+  color: white;
+  padding: 20px;
+}
+
+.footer__last-image {
+  
+}
 </style>
