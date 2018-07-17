@@ -95,7 +95,7 @@
         </b-col>
       </b-row>
       <b-row class="text-center statistics__contact">
-        <button v-on:click="goToByScroll(10)" > COTNACT US TODAY</button>
+        <button v-on:click="goToScroll(10)" > COTNACT US TODAY</button>
       </b-row>
     </b-container>
   </section>
@@ -231,7 +231,7 @@ export default {
 
   methods: {
 
-    goToByScroll(id) {
+    goToScroll(id) {
       jQuery("html,body").animate(
         { scrollTop: jQuery("#" + id).offset().top },
         "slow"
