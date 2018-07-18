@@ -4,14 +4,15 @@
     <div class="video__overlay"></div>
     <div class="video__container">
       <video-bg :sources="['/video.mp4']" class="d-none d-md-block d-xs-none"></video-bg>
+      <video-bg :sources="['/responsive.mp4']" class="d-block d-sm-none" ></video-bg>
     </div>
     <div class="header">
       <div class="header__menu-left">
-        <a href="mailto:info@ledtruckmedia.com">info@ledtruckmedia.com</a>
+        <a href="mailto:sales@ledtruckmedia.com">sales@ledtruckmedia.com</a>
       </div>
       <div class="header__logo-box">
         <a href="/home">
-          <img class="header__logo " src="../assets/img/ltm_dark.png" alt="">
+          <img class="header__logo " src="../assets/img/LEDTRCUKMEDIA-LOGO.png" alt="">
         </a>
       </div>
       <div class="header__menu-right text-center">
@@ -22,97 +23,127 @@
       </div>
     </div>
 
-    <!-- <b-container class="boxes-3 col-12">
+
+    <div class="header-mobile">
+      <div class="row text-center">
+        <div class="col-12">
+          <a href="/home">
+            <img class="header__logo " src="../assets/img/LEDTRCUKMEDIA-LOGO.png" alt="">
+          </a>
+        </div>
+        <div class="col-12">
+          <a href="tel:917-224-3336">917-224-3336</a>&nbsp;
+          <a class="fab fa-facebook-square" href="https://www.facebook.com/LED-Truck-Media-1575325705912466/" target="_blank"></a>&nbsp;
+          <a class="fab fa-instagram" href="https://www.instagram.com/ledtruckmedia/" target="_blank"></a>&nbsp;
+          <a class="fab fa-youtube" href="https://www.youtube.com/channel/UCqviwhdR9IIxiOHTpalhhLw" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+
+    <b-container class="boxes-3 col-12">
       <b-row>
-        <b-col class="3-boxes__left text-center">
-          <img class="boxes-3__truck-side" src="../assets/img/side-truck-add.png" alt="">
-          <h3>SIDE PANEL</h3>
-          <strong> 120" Diagonal HD </strong>
-          <p>30 sec spot / 15 sec spot</p>
-          <p>Animation, Video or Still Image </p>
-          <b-button variant="outline-success" href="#"> Buy Ad now</b-button>
+
+        <b-col class="text-center">
+          <h1>YOUR ADS ON OUR TRUCKS</h1>
+          <button class="home__button" v-on:click="goToByScroll(10)" >Request A Quote!</button>
         </b-col>
-        <b-col class="3-boxes__middle text-center">
-          <img class="boxes-3__truck-back" src="../assets/img/back-truck-add.png" alt="">
-          <h3>BACK PANEL</h3>
-          <strong>720" Square HD </strong>
-          <p>30 sec spot / 15 sec spot </p>
-          <p>Animation or Still Image </p>
-          <b-button variant="outline-success" href="#"> Contact us</b-button>
-        </b-col>
-        <b-col class="3-boxes__right text-center">
-          <img class="boxes-3__truck-full" src="../assets/img/frontside-truck-add.png" alt="">
-          <h3>FULL TRUCK</h3>
-          <strong>6 hour shift custom route </strong>
-          <p>Video, Live Stream, </p>
-          <p>Private Events </p>
-          <b-button variant="outline-success" href="#"> Start Today</b-button>
-        </b-col>
+       
       </b-row>
-    </b-container> -->
+    </b-container>
 
   </section>
 
   <section class="trucks__section">
-    <div class="trucks___section--fulltruck px-5 my-5">
-      <h2 class="fulltruck">FULL TRUCK EXCLUSIVE</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odio, reprehenderit eveniet, amet aperiam consectetur blanditiis quam eaque facilis asperiores deserunt velit sint quia? Reprehenderit culpa veritatis officia quis ducimus!</p>
-    </div>
-    <div class="trucks__section--otheroptions">
-      <img class="boxes-3__truck-full" src="../assets/img/frontside-truck-add.png" alt="">
-      <h2 class="sharedcampaing">SHARED CAMPAING</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga praesentium fugit recusandae delectus, tempora eos? Cum numquam nobis iure tempore eaque nulla. Minima modi corporis esse? Assumenda aut temporibus cupiditate?</p>
-      <div class="sidepanel">
-         <img class="boxes-3__truck-side" src="../assets/img/side-truck-add.png" alt="">
-        <h3>SIDE PANEL</h3>
-          <strong> 120" Diagonal HD </strong>
-          <p>30 sec spot / 15 sec spot</p>
-          <p>Animation, Video or Still Image </p>
+    <div class="container-fluid">
+      <div class="trucks___section--fulltruck text-center">
+        <h2 class="fulltruck">FULL TRUCK EXCLUSIVE</h2>
+        <div class="col-12 d-flex justify-content-center">
+          <p style="width:600px">Our full truck exclusive gives you the advantage to design your full campaign. Choose the ads you want to be placed on the sides and back of our LED billboard, and customize your route to reach your desired target demographics.</p>
+        </div>
+        <img class="boxes-3__truck-full" src="../assets/img/frontside-truck-add.png" alt="">
+        <p><strong>6 Hour shift custom route</strong>
+        Video, Live Stream, <br> Private Events</p>
       </div>
-      <div class="backpanel">
-         <img class="boxes-3__truck-back" src="../assets/img/back-truck-add.png" alt="">
-          <h3>FULL TRUCK</h3>
-          <strong>6 hour shift custom route </strong>
-          <p>Video, Live Stream, </p>
-          <p>Private Events </p>
+      <div class="trucks__section--otheroptions text-center">
+        <h2 class="fulltruck ">SHARED CAMPAIGN</h2>
+        <div class="col-12 d-flex justify-content-center">
+          <p style="width:600px">Our shared campaigns give you the flexibility to share our Miami route with another 5-15 rotating ads, over the course of 6 hours.</p>
+        </div>
+        <b-row class="text-center" style="margin-top:80px">
+          <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+            <div class="sidepanel">
+              <img class="boxes-3__truck-side" src="../assets/img/side-truck-add.png" alt="">
+              <h3>SIDE PANEL</h3>
+                <strong> 120" Diagonal HD </strong>
+                <p>30 sec spot / 15 sec spot<br>Animation, Video or Still Image </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-2 col-md-2 col-lg-2 d-flex align-items-center justify-content-center">
+            <h1>OR</h1>
+          </div>
+          <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+            <div class="sidepanel">
+              <img class="boxes-3__truck-back" src="../assets/img/back-truck-add.png" alt="">
+              <h3>BACK PANEL</h3>
+                <strong> 720" Square HD </strong>
+                <p>30 sec spot / 15 sec spot<br>Animation, Video or Still Image </p>
+            </div>
+          </div>
+        </b-row>
       </div>
     </div>
+    
   </section>
 
   <section class="statistics">
-    <b-container col-12>
+    <b-container col-12 class="text-center">
       <b-row>
         <b-col>
           <h3 class="my-4git  statistics__title">THE STATISTICS SPEAK FOR THEMSELVES</h3>
         </b-col>
       </b-row>
       <b-row class="text-center statistics__images">
-        <b-col>
+        <div class="col-12 col-sm-6">
           <img src="../assets/img/statistics_1 copy.png" alt="" style="width:100%;height:auto;">
-        </b-col>
-        <b-col>
+        </div>
+        <div class="col-12 col-sm-6">
           <img src="../assets/img/statistics_2 copy.png" alt="" style="width:100%;height:auto;">
-        </b-col>
+        </div>
       </b-row>
       <b-row class="text-center statistics__contact">
-        <button v-on:click="goToScroll(10)" > COTNACT US TODAY</button>
+        <button v-on:click="goToByScroll(10)" >CONTACT US TODAY</button>
       </b-row>
     </b-container>
   </section>
 
   <section class="divider-1">
+    <div class="divider-1__overlay">
+      <div class="divider-1__container">
+        <b-row>
+          <div class="col-12">
+            <a class="mailto" style="padding: 10px;" href="mailto:sales@ledtruckmedia.com">sales@ledtruckmedia.com</a>
+
+            <div class="divider-1__content col-12  text-center">
+              <h1 class="num">917-224-3336</h1>
+            </div>
+            <h4 class="divider-1__address">400 NW 26 ST, Miami, Fl 33127</h4>
+          </div>
+          
+        </b-row>
+      </div>
+    </div>
   </section>
 
   <section class="contact" id="10">
     <b-container col-12 class="text-center">
       <b-row>
         <b-col>
-          <img class="footer__logo" src="../assets/img/ltm_dark.png" alt="">
+          <img class="footer__logo" src="../assets/img/LEDTRCUKMEDIA-LOGO.png" alt="">
         <h3 class="my-5 contact__title">GET IN TOUCH</h3>
         </b-col>
       </b-row>
       <b-row>
-        <div class="contact__form">
+        <div class="contact__form col-12 col-sm-12 col-md-5 col-md-5">
           <b-form @submit="onSubmit" @reset="onReset" v-if="show">
             <b-form-group id="exampleInputGroup2">
               <b-form-input id="exampleInput2"
@@ -144,9 +175,9 @@
             <b-form-group class="float-right col-12">
               <b-row>
                 <span class="float-left col-4">
-                Required *
+
               </span>
-              <div class="col-8">
+              <div class="col-4">
                 <b-button 
                   type="submit" 
                   variant="outline-success"
@@ -164,7 +195,7 @@
     </b-container>
   </section>
 
-  <section class="footer">
+  <!-- <section class="footer">
     <b-container>
       <b-row class="text-center">
         <b-col class="md-6 my-5">
@@ -185,14 +216,19 @@
       </b-row>
     </b-container>
 
-  </section>
+  </section> -->
 
   <section class="footer__last">
     <b-container col-12 class="text-center">
-      <b-row>
-        <b-col>
-          <img src="../assets/img/asoftio_logo_final_dark.png" alt="">
-        </b-col>
+      <b-row class="text-center">
+        <div class="col-12 footer__last-text">
+          web by
+        </div>
+        <div class="col-12 footer__last-image">
+          <a href="http://www.asoftio.com" target="blanck">
+          <img src="../assets/img/asoftio_logo_final_dark.png" alt="asoftio logo">
+          </a>
+        </div>
       </b-row>
     </b-container>
 
@@ -271,8 +307,8 @@ export default {
 
 <style scoped>
 
-.video__container {
-  
+.trucks__section--otheroptions {
+  margin-top: 80px
 }
 
 .home__top {
@@ -294,7 +330,7 @@ export default {
 }
 
 .video__overlay {
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -315,6 +351,24 @@ export default {
   align-content: center;
   /* text-align: center; */
 }
+.header-mobile{
+  display: none;
+  
+}
+@media (max-width: 576px){
+  .header {
+    display: none
+  }
+  .header-mobile {
+    position: absolute;
+    top: 1rem;
+    z-index: 3;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-content: center;
+  }
+}
 
 .header__logo-box {
 
@@ -323,17 +377,20 @@ export default {
 }
 
 .header__logo {
-  height: 6rem;
+  height: 10rem;
 }
 
 .header__menu-left {
 }
 
 .trucks__section {
+  padding: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #232323;
+  background-image: url("../assets/img/stats_bg.png");
   color: #eee;
 }
 
@@ -345,10 +402,20 @@ export default {
 .boxes-3 {
   z-index: 4;
   position: absolute;
-  bottom: 3rem;
+  bottom: 10rem;
   color: #eee;
 }
 
+.home__button  {
+  margin-top: 20px;
+  color: white;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px;
+  padding-right: 100px;
+  padding-left: 100px;
+  cursor: pointer;
+}
 .btn {
   border-color: white;
   border-radius: 1px;
@@ -363,13 +430,13 @@ export default {
 }
 
 .boxes-3__truck-full {
-  
+  margin-top: 50px;
 }
 
 /* Statistics section  */
 
 .statistics {
-  height: 50rem;
+  /* height: 50rem; */
   padding: 25px;
   padding-top: 50px;
   background-color: #232323;
@@ -395,12 +462,52 @@ export default {
   padding-right: 100px;
   padding-left: 100px;
   cursor: pointer;
+  margin-bottom: 30px;
 }
+
+.divider-1__overlay {
+  opacity: 1;
+  /* position: ab; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  z-index: 0;
+}
+
+.divider-1__address {
+  padding: 10px;
+  background-color: black;
+  opacity: 1.4;
+  /* padding-bottom: 10px; */
+  align-content: center
+}
+.divider-1__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+
+}
+
+.divider-1__content {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 25px;
+}
+
 .divider-1 {
-  padding-bottom: 20px;
-  height: 35rem;
-  background-image: url("https://i.ytimg.com/vi/EDlBV8gZS4U/maxresdefault.jpg");
-  color: #eee;
+  background-image: url("/ledtruckimage.png");
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
 }
 
 .contact {
@@ -433,12 +540,14 @@ export default {
 }
 
 .footer__logo {
-  height: 6rem;
+  height: 10rem;
   margin-top: 4rem;
 }
 
 .footer__last {
-  background-color: #232323;
+  align-items: right;
+  /* padding: 20px; */
+  background-color: #232323db;
 }
 
 h1, h2, h3 {
@@ -465,4 +574,29 @@ a {
   color: #eee;
 }
 
+p {
+  align-content: center;
+}
+
+.num {
+    margin-bottom: 0px !important;
+}
+
+.mailto {
+  font-size: 30px;
+}
+
+.footer__last-text {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  padding: 0 0 -10px 0;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: .7rem;
+}
+
+.footer__last-image {
+  
+}
 </style>
