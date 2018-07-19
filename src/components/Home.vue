@@ -7,7 +7,7 @@
       <video-bg :sources="['/responsive.mp4']" class="d-block d-sm-none" ></video-bg>
     </div>
     <div class="header">
-      <div class="header__menu-left">
+      <div class="header__menu-left"> 
         <a href="mailto:sales@ledtruckmedia.com">sales@ledtruckmedia.com</a>
       </div>
       <div class="header__logo-box">
@@ -160,6 +160,14 @@
                             v-model="form.email"
                             required
                             placeholder="EMAIL">
+              </b-form-input>
+            </b-form-group>
+            <b-form-group id="exampleInputGroup1">
+              <b-form-input id="exampleInput1"
+                            type="phone"
+                            v-model="form.phone"
+                            required
+                            placeholder="PHONE">
               </b-form-input>
             </b-form-group>
             <b-form-group id="exampleInputGroup3"
