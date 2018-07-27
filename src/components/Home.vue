@@ -40,14 +40,22 @@
       </div>
     </div>
 
-    <b-container class="boxes-3 col-12">
+    <b-container class="boxes-3 col-12 col-sm-12">
       <b-row>
 
         <b-col class="text-center">
-          <h1>YOUR ADS ON OUR TRUCKS</h1>
-          <button class="home__button" v-on:click="goToScroll(10)" >Request A Quote!</button>
+          <h1 class="main-header">YOUR ADS ON OUR TRUCKS</h1>
+          <button class="home__button" v-on:click="goToScroll(10)" >Request a Quote!</button>
         </b-col>
        
+      </b-row>
+      <b-row>
+        <b-col class="text-center">
+        <div class="subtext">
+          New York City - Buffalo - D.C. -  Richmond - Boston - Chicago - Philadelphia - Cleveland - Los Angeles - San Diego - Phoenix - Houston - Dallas - Denver - Orlando - Tampa - Jacksonville - Miami - Atlanta - Raleigh - Las Vegas, Seatle, Ohio, &amp; more...
+        </div>
+      </b-col>
+
       </b-row>
     </b-container>
 
@@ -316,6 +324,34 @@ export default {
 
 <style scoped>
 
+h1, h2, h3 {
+  text-align: center;
+}
+
+h3 {
+  margin: 0 0 0;
+}
+
+h2 {
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #eee;
+}
+
+p {
+  align-content: center;
+}
+
 a:hover {
   color: #b7b7b7 !important;
   text-decoration: none;
@@ -365,36 +401,35 @@ a:hover {
   align-content: center;
   /* text-align: center; */
 }
+
+.main-header {
+  font-weight: 100;
+  letter-spacing: .8rem;
+}
+
+.main-button {
+
+}
+
 .header-mobile{
-  display: none;
-  
-}
-@media (max-width: 576px){
-  .header {
-    display: none
-  }
-  .header-mobile {
-    position: absolute;
-    top: 1rem;
-    z-index: 3;
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: center;
-    align-content: center;
-  }
-}
-
-.header__logo-box {
-
-  
-  /* margin: auto 0; */
+  display: none; 
 }
 
 .header__logo {
   height: 10rem;
 }
 
-.header__menu-left {
+.subtext {
+  margin: 0 auto;
+  font-size: .8rem;
+  position: absolute;
+  text-align: center;
+  color: #9b9b9b;
+  font-weight: 100;
+  width: 90%;
+  bottom: -9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .trucks__section {
@@ -425,6 +460,9 @@ a:hover {
   padding-right: 100px;
   padding-left: 100px;
   cursor: pointer;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
 }
 .btn {
   border-color: white;
@@ -561,33 +599,7 @@ a:hover {
   background-color: #232323db;
 }
 
-h1, h2, h3 {
-  text-align: center;
-}
 
-h3 {
-  margin: 0 0 0;
-}
-
-h2 {
-
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #eee;
-}
-
-p {
-  align-content: center;
-}
 
 .num {
     margin-bottom: 0px !important;
@@ -607,7 +619,26 @@ p {
   font-size: .7rem;
 }
 
-.footer__last-image {
-  
+@media (max-width: 576px){
+  .header {
+    display: none
+  }
+
+  .boxes-3 {
+    bottom: 20rem;
+  }
+  .header-mobile {
+    position: absolute;
+    top: 1rem;
+    z-index: 3;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-content: center;
+  }
+  .subtext {
+    bottom: -17rem ;
+    font-size: .7rem ;
+  }
 }
 </style>
