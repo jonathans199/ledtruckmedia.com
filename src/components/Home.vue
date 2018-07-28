@@ -7,15 +7,9 @@
       <video-bg :sources="['/responsive.mp4']" class="d-block d-sm-none" ></video-bg>
     </div>
     <div class="header">
-      <div class="header__menu-left"> 
         <a href="mailto:sales@ledtruckmedia.com">sales@ledtruckmedia.com</a>
-      </div>
-      <div class="header__logo-box">
-        <a href="/home">
-          <img class="header__logo " src="../assets/img/LEDTRCUKMEDIA-LOGO.png" alt="">
-        </a>
-      </div>
-      <div class="header__menu-right text-center">
+        <a href="/home"><img class="header__logo " src="../assets/img/LEDTRCUKMEDIA-LOGO.png" alt="Led Truck Media Logo"></a>
+      <div>
         <a href="tel:917-224-3633">917-224-3633</a>&nbsp;
         <a class="fab fa-facebook-square" href="https://www.facebook.com/LED-Truck-Media-1575325705912466/" target="_blank"></a>&nbsp;
         <a class="fab fa-instagram" href="https://www.instagram.com/ledtruckmedia/" target="_blank"></a>&nbsp;
@@ -23,42 +17,13 @@
       </div>
     </div>
 
-
-    <div class="header-mobile">
-      <div class="row text-center">
-        <div class="col-12">
-          <a href="/home">
-            <img class="header__logo " src="../assets/img/LEDTRCUKMEDIA-LOGO.png" alt="">
-          </a>
-        </div>
-        <div class="col-12">
-          <a href="tel:917-224-3633">917-224-3633</a>&nbsp;
-          <a class="fab fa-facebook-square" href="https://www.facebook.com/LED-Truck-Media-1575325705912466/" target="_blank"></a>&nbsp;
-          <a class="fab fa-instagram" href="https://www.instagram.com/ledtruckmedia/" target="_blank"></a>&nbsp;
-          <a class="fab fa-youtube" href="https://www.youtube.com/channel/UCqviwhdR9IIxiOHTpalhhLw" target="_blank"></a>
-        </div>
-      </div>
+    <div class="hero-text">
+      <h1>YOUR ADS ON OUR TRUCKS</h1>
+      <button class="home__button" v-on:click="goToScroll(10)" >Request a Quote!</button>
+      <p class="subtext">
+        New York City - Buffalo - D.C. -  Richmond - Boston - Chicago - Philadelphia - Cleveland - Los Angeles - San Diego - Phoenix - Houston - Dallas - Denver - Orlando - Tampa - Jacksonville - Miami - Atlanta - Raleigh - Las Vegas - Seatle - Ohio &amp; more...
+      </p>
     </div>
-
-    <b-container class="boxes-3 col-12 col-sm-12">
-      <b-row>
-
-        <b-col class="text-center">
-          <h1 class="main-header">YOUR ADS ON OUR TRUCKS</h1>
-          <button class="home__button" v-on:click="goToScroll(10)" >Request a Quote!</button>
-        </b-col>
-       
-      </b-row>
-      <b-row>
-        <b-col class="text-center">
-        <div class="subtext">
-          New York City - Buffalo - D.C. -  Richmond - Boston - Chicago - Philadelphia - Cleveland - Los Angeles - San Diego - Phoenix - Houston - Dallas - Denver - Orlando - Tampa - Jacksonville - Miami - Atlanta - Raleigh - Las Vegas, Seatle, Ohio, &amp; more...
-        </div>
-      </b-col>
-
-      </b-row>
-    </b-container>
-
   </section>
 
   <section class="trucks__section">
@@ -100,7 +65,6 @@
         </b-row>
       </div>
     </div>
-    
   </section>
 
   <section class="statistics">
@@ -125,19 +89,11 @@
   </section>
 
   <section class="divider-1">
-    <div class="divider-1__overlay">
-      <div class="divider-1__container">
-        <b-row>
-          <div class="col-12">
-            <a class="divider-1__phone" href="mailto:sales@ledtruckmedia.com"><h3>sales@ledtruckmedia.com</h3></a>
-            <div class="divider-1__content col-12  text-center">
-              <h1 class="num">917-224-3633</h1>
-            </div>
-            <h4 class="divider-1__address">400 NW 26 ST, Miami, Fl 33127</h4>
-          </div>
-          
-        </b-row>
-      </div>
+    <div class="divider-1__overlay"></div>
+    <div class="divider-1__container">
+        <a class="divider-1__email" href="mailto:sales@ledtruckmedia.com"><h3>sales@ledtruckmedia.com</h3></a>
+        <h1 class="divider-1__phone">917-224-3633</h1>
+        <h4 class="divider-1__address">400 NW 26 ST, Miami, Fl 33127</h4>
     </div>
   </section>
 
@@ -209,30 +165,7 @@
       </b-row>
     </b-container>
   </section>
-
-  <!-- <section class="footer">
-    <b-container>
-      <b-row class="text-center">
-        <b-col class="md-6 my-5">
-
-          <strong>Start a Project</strong></br>
-
-          <a href="mailto:info@ledtruckmedia.com">info@ledtruckmedia.com</a>
-          </p>
-        </b-col>
-        <b-col class="md-6 my-5">
-          <strong>Say hello</strong>
-          <p>400 NW 26 ST, Miami, Fl 33127</p>
-        </b-col>
-        <b-col class="md-6 my-5">
-          <strong>Get in touch</strong>
-            <p>917.224.3633</p> 
-        </b-col>
-      </b-row>
-    </b-container>
-
-  </section> -->
-
+  
   <section class="footer__last">
     <b-container col-12 class="text-center">
       <b-row class="text-center">
@@ -402,14 +335,6 @@ a:hover {
   /* text-align: center; */
 }
 
-.main-header {
-  font-weight: 100;
-  letter-spacing: .8rem;
-}
-
-.main-button {
-
-}
 
 .header-mobile{
   display: none; 
@@ -419,15 +344,41 @@ a:hover {
   height: 10rem;
 }
 
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  text-align: center;
+  z-index: 4;
+  position: absolute;
+  bottom: 7rem;
+  color: #eee;
+}
+
+.home__button  {
+  /* width: 400px; */
+  margin-top: 20px;
+  color: white;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: .5rem 2rem;
+  /* padding-right: 100px;
+  padding-left: 100px; */
+  cursor: pointer;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
 .subtext {
-  margin: 0 auto;
   font-size: .8rem;
   position: absolute;
-  text-align: center;
-  color: #9b9b9b;
+  color: #fff;
   font-weight: 100;
   width: 90%;
-  bottom: -9rem;
+  bottom: -7rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -444,26 +395,6 @@ a:hover {
   background-size: cover;
 }
 
-.boxes-3 {
-  z-index: 4;
-  position: absolute;
-  bottom: 10rem;
-  color: #eee;
-}
-
-.home__button  {
-  margin-top: 20px;
-  color: white;
-  border-radius: 5px;
-  background-color: transparent;
-  padding: 10px;
-  padding-right: 100px;
-  padding-left: 100px;
-  cursor: pointer;
-  font-weight: 100;
-  text-transform: uppercase;
-  letter-spacing: .2rem;
-}
 .btn {
   border-color: white;
   border-radius: 1px;
@@ -505,9 +436,20 @@ a:hover {
   margin-bottom: 30px;
 }
 
+.divider-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/ledtruckimage.png");
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
 .divider-1__overlay {
   opacity: 1;
-  /* position: ab; */
   top: 0;
   left: 0;
   width: 100%;
@@ -516,47 +458,29 @@ a:hover {
   z-index: 0;
 }
 
-.divider-1__phone h3 {
+.divider-1__container {
+  position: absolute;
+  color: white;
+}
+
+.divider-1__phone {
+  padding: 10px;
+  background-color: #2929298c;
+  color: white;
+  width: 100%;
+  letter-spacing: 7px;
+}
+
+.divider-1__email h3 {
   font-weight: 100;
   letter-spacing: 7px;
   padding: 1rem;
-  opacity: 1.4;
-  align-content: center;
 }
 
 .divider-1__address {
   font-weight: 100;
   letter-spacing: 7px;
   padding: 1rem;
-  opacity: 1.4;
-  /* padding-bottom: 10px; */
-  align-content: center
-}
-.divider-1__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  color: white;
-
-}
-
-.divider-1__content {
-  padding: 10px;
-  background-color: #2929298c;
-  color: white;
-  width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
-  
-}
-
-.divider-1 {
-  background-image: url("/ledtruckimage.png");
-  width: 100%;
-  height: 600px;
-  background-size: cover;
-  background-position: center;
 }
 
 .contact {
@@ -599,8 +523,6 @@ a:hover {
   background-color: #232323db;
 }
 
-
-
 .num {
     margin-bottom: 0px !important;
 }
@@ -620,25 +542,38 @@ a:hover {
 }
 
 @media (max-width: 576px){
+  
   .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  
+  /* .header {
     display: none
+  } */
+
+  .header__logo {
+    height: 9rem;
+    padding: 1rem 0; 
   }
 
-  .boxes-3 {
-    bottom: 20rem;
-  }
-  .header-mobile {
-    position: absolute;
-    top: 1rem;
-    z-index: 3;
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: center;
-    align-content: center;
-  }
+
+  
   .subtext {
-    bottom: -17rem ;
-    font-size: .7rem ;
+    display: none;
+  }
+
+  .divider-1__email h3 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+
+  .divider-1__address {
+    font-size: 20px;
+    text-align: center;
   }
 }
 </style>
