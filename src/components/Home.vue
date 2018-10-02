@@ -7,7 +7,7 @@
       <video-bg :sources="['/responsive.mp4']" class="d-block d-sm-none" ></video-bg>
     </div>
     <div class="header">
-        <a href="mailto:sales@ledtruckmedia.com">sales@ledtruckmedia.com</a>
+        <a class="flex-last" href="mailto:sales@ledtruckmedia.com">sales@ledtruckmedia.com</a>
         <a href="/home"><img class="header__logo " src="../assets/img/LEDTRCUKMEDIA-LOGO.png" alt="Led Truck Media Logo"></a>
       <div>
         <a href="tel:917-224-3633">917-224-3633</a>&nbsp;
@@ -309,7 +309,6 @@ a:hover {
   height: 100vh !important;
   width: 100%;
   z-index: -1; 
-  
 }
 
 .video__overlay {
@@ -541,7 +540,7 @@ a:hover {
   font-size: .7rem;
 }
 
-@media (max-width: 576px){
+@media (max-width: 812px){
   
   .header {
     display: flex;
@@ -549,18 +548,20 @@ a:hover {
     justify-content: center;
     align-items: center; 
   }
-  
-  
-  /* .header {
-    display: none
-  } */
 
-  .header__logo {
-    height: 9rem;
-    padding: 1rem 0; 
+  .hero-text {
+    font-size: .5rem;
+    bottom: 1rem;
   }
 
+  .hero-text h1 {
+    font-size: 1rem;
+  }
 
+  .header__logo {
+    height: 7rem;
+    padding: 1rem 0; 
+  }
   
   .subtext {
     display: none;
@@ -568,11 +569,14 @@ a:hover {
 
   .divider-1__email h3 {
     font-size: 1.5rem;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
   }
 
+  .divider-1__phone {
+    font-size: 1.5rem;
+  }
   .divider-1__address {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
   }
 }
